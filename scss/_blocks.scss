@@ -6,3 +6,24 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+
+.subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.text {
+    line-height: 150%;
+    text-align: center;
+}
+
+.more {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    color: #000000;
+
+    transition: all 0.3s ease 0s;
+}

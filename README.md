@@ -1,3 +1,3 @@
-## name
+## Practice with cards.
 
-description [here]()
+You can look [here](https://klevodev.github.io/18-flex-cards/).
