@@ -5,6 +5,15 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: content-box;
+}
+
+.subheading {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 150%;
+    text-align: center;
 }
 
 .subtitle {
@@ -23,7 +32,7 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 150%;
-    color: #000000;
+    color: #000;
 
     transition: all 0.3s ease 0s;
 }

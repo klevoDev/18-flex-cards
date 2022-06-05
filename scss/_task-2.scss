@@ -1,6 +1,8 @@
 .task-2 {
     &__row {
         display: flex;
+
+        margin-top: -59px;
     }
 
     &__column {
@@ -9,27 +11,35 @@
     }
 
     &__item {
-        padding: 0 0 28px;
         background: #ffa89a;
         box-shadow: 0px 0px 15px 1px #ff8875;
         transition: all 0.3s ease 0s;
 
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
         &:hover {
             background: #524d4c;
             box-shadow: 0px 0px 15px 1px #ff8875;
-            .task-2__wrap-link {
-                background: #00a72f;
-            }
         }
     }
 
     &__wrap-image {
-        width: 300px;
         margin-bottom: 26px;
     }
 
     &__image {
-        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__body {
+        padding: 26px 40px 28px 41px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     &__subtitle {
@@ -42,48 +52,66 @@
         color: #ffffff;
 
         margin-bottom: 16px;
+        flex: 1 1 auto;
     }
 
     &__wrap-link {
-        max-width: 150px;
-        height: 38px;
-        background: #43f074;
-        border-radius: 30px;
-        margin-left: 75px;
+        width: 150px;
+        flex: 0 0 38px;
 
-        text-align: center;
-
-        padding-top: 7px;
-        transition: all 0.3s ease 0s;
+        margin: 0 auto;
     }
 
     &__more {
+        height: 100%;
+        width: 100%;
+
         font-weight: 600;
         font-size: 15px;
         line-height: 150%;
-
         color: #ffffff;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #43f074;
+        border-radius: 30px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background: #00a72f;
+        }
     }
+}
 
-    // &__wrap-button {
-    //     max-width: 150px;
-    //     height: 38px;
-    //     margin-left: 75px;
-    // }
+@media (max-width: 1200px) {
+    .task-2 {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: -30px 0;
+        }
 
-    // &__button {
-    //     width: 100%;
-    //     height: 100%;
+        &__column {
+            flex: 0 1 35%;
+            padding: 30px;
+        }
+    }
+}
 
-    //     background: #43f074;
-    //     border-radius: 30px;
+@media (max-width: 1023px) {
+    .task-2 {
+        &__column {
+            flex: 0 1 45%;
+        }
+    }
+}
 
-    //     font-weight: 600;
-    //     font-size: 15px;
-    //     line-height: 150%;
-
-    //     color: #ffffff;
-
-    //     transition: all 0.3s ease 0s;
-    // }
+@media (max-width: 767px) {
+    .task-2 {
+        &__column {
+            flex: 0 1 90%;
+        }
+    }
 }
