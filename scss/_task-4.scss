@@ -13,12 +13,51 @@
     }
 
     &__item {
-        padding: 42px 24px 20px;
+        position: relative;
+        padding: 42px 19px 20px;
         background: #eaffaf;
 
         height: 100%;
         display: flex;
         flex-direction: column;
+
+        &:hover {
+            .task-4__text {
+                color: #01b172;
+            }
+            &::before {
+                height: 30px;
+            }
+            &::after {
+                height: 30px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: " ";
+            width: 100%;
+            height: 0;
+
+            bottom: 100%;
+            left: 0;
+            background: #eaffaf;
+
+            transition: all 0.3s ease 0s;
+        }
+
+        &::after {
+            position: absolute;
+            content: " ";
+            width: 100%;
+            height: 0;
+
+            top: 100%;
+            left: 0;
+            background: #eaffaf;
+
+            transition: all 0.3s ease 0s;
+        }
     }
 
     &__subtitle {
@@ -36,13 +75,13 @@
         color: #ed6060;
 
         flex: 1 1 auto;
+        transition: all 0.3s ease 0s;
 
         margin-bottom: 20px;
     }
 
     &__list {
         color: #344650;
-
         margin-bottom: 23px;
     }
 
@@ -50,6 +89,7 @@
     }
 
     &__wrap-more {
+        text-align: center;
     }
 
     &__more {
@@ -57,18 +97,61 @@
         display: inline-block;
         color: #ed6060;
 
-        display: flex;
-        justify-content: center;
-
         &::after {
             position: absolute;
             content: "";
             top: 9px;
-            right: 4px;
+            right: -15px;
 
             border: 7px solid transparent;
             border-top: 7px solid #ed6060;
             border-bottom: 7px solid transparent;
+
+            transition: all 0.3s ease 0s;
+        }
+
+        &:hover {
+            color: #01b172;
+
+            &::after {
+                border: 7px solid transparent;
+                border-top: 7px solid #01b172;
+                border-bottom: 7px solid transparent;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .task-4 {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__column {
+            flex: 0 1 40%;
+            padding: 37px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .task-4 {
+        &__column {
+            flex: 0 1 65%;
+        }
+
+        &__subheading {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .task-4 {
+        &__column {
+            flex: 0 1 90%;
         }
     }
 }
