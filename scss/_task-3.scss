@@ -118,5 +118,40 @@
     }
 }
 
-// @media (max-width: 1336px) {
-// }
+@media (max-width: 1335px) {
+    .task-3 {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__column {
+            flex: 0 1 33.3334%;
+            padding: 35px 35px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .task-3 {
+        &__column {
+            flex: 0 1 40%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .task-3 {
+        &__column {
+            flex: 0 1 65%;
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .task-3 {
+        &__column {
+            flex: 0 1 90%;
+        }
+    }
+}
