@@ -1,4 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  src: url("./../fonts/open-sans-v29-latin_cyrillic-regular.woff2") format("woff2"), url("./../fonts/open-sans-v29-latin_cyrillic-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  src: url("./../fonts/open-sans-v29-latin_cyrillic-600.woff2") format("woff2"), url("./../fonts/open-sans-v29-latin_cyrillic-600.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  src: url("./../fonts/open-sans-v29-latin_cyrillic-700.woff2") format("woff2"), url("./../fonts/open-sans-v29-latin_cyrillic-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -109,6 +132,11 @@ body {
 
 .page__task-4 {
   padding: 50px 0 80px;
+}
+
+.page__task-5 {
+  padding: 60px 120px;
+  background: #efefef;
 }
 
 .task-1__heading {
@@ -535,12 +563,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: -25px -17.5px;
   }
   .task-3__column {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.3334%;
             flex: 0 1 33.3334%;
-    padding: 35px 35px;
+    padding: 25px 17.5px;
   }
 }
 
@@ -647,9 +676,6 @@ body {
   line-height: 150%;
   text-align: center;
   color: #ed6060;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   margin-bottom: 20px;
@@ -658,6 +684,9 @@ body {
 .task-4__list {
   color: #344650;
   margin-bottom: 23px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .task-4__wrap-more {
@@ -674,10 +703,10 @@ body {
   position: absolute;
   content: "";
   top: 9px;
-  right: -15px;
-  border: 7px solid transparent;
+  right: -14px;
   border-top: 7px solid #ed6060;
-  border-bottom: 7px solid transparent;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -687,9 +716,7 @@ body {
 }
 
 .task-4__more:hover::after {
-  border: 7px solid transparent;
-  border-top: 7px solid #01b172;
-  border-bottom: 7px solid transparent;
+  border-top-color: #01b172;
 }
 
 @media (max-width: 1023px) {
@@ -699,6 +726,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: -37px;
   }
   .task-4__column {
     -webkit-box-flex: 0;

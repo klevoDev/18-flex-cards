@@ -1,4 +1,8 @@
 .page {
+    // & > *:not(:nth-child(4)) {
+    //     display: none;
+    // }
+
     &__task-1 {
         padding: 40px 0 140px;
         background: #efefef;
@@ -15,5 +19,10 @@
 
     &__task-4 {
         padding: 50px 0 80px;
+    }
+
+    &__task-5 {
+        padding: 60px 120px;
+        background: #efefef;
     }
 }

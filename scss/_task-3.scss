@@ -123,11 +123,12 @@
         &__row {
             flex-wrap: wrap;
             justify-content: center;
+            margin: -25px -17.5px;
         }
 
         &__column {
             flex: 0 1 33.3334%;
-            padding: 35px 35px;
+            padding: 25px 17.5px;
         }
     }
 }

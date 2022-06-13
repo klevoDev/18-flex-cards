@@ -74,7 +74,6 @@
         text-align: center;
         color: #ed6060;
 
-        flex: 1 1 auto;
         transition: all 0.3s ease 0s;
 
         margin-bottom: 20px;
@@ -83,6 +82,7 @@
     &__list {
         color: #344650;
         margin-bottom: 23px;
+        flex: 1 1 auto;
     }
 
     &__point {
@@ -101,22 +101,19 @@
             position: absolute;
             content: "";
             top: 9px;
-            right: -15px;
+            right: -14px;
 
-            border: 7px solid transparent;
             border-top: 7px solid #ed6060;
-            border-bottom: 7px solid transparent;
+            border-left: 4.5px solid transparent;
+            border-right: 4.5px solid transparent;
 
             transition: all 0.3s ease 0s;
         }
 
         &:hover {
             color: #01b172;
-
             &::after {
-                border: 7px solid transparent;
-                border-top: 7px solid #01b172;
-                border-bottom: 7px solid transparent;
+                border-top-color: #01b172;
             }
         }
     }
@@ -127,6 +124,7 @@
         &__row {
             flex-wrap: wrap;
             justify-content: center;
+            margin: -37px;
         }
 
         &__column {
