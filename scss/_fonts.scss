@@ -10,6 +10,7 @@
         font-style: #{$fontStyle};
     }
 }
+
 @include font("Open Sans", "open-sans-v29-latin_cyrillic-regular", "400", "normal");
 @include font("Open Sans", "open-sans-v29-latin_cyrillic-600", "600", "normal");
 @include font("Open Sans", "open-sans-v29-latin_cyrillic-700", "700", "normal");

@@ -1,11 +1,13 @@
 // * ===== fonts ===== * //
 @import "_fonts";
+@import "_iconfont";
 
 // * ===== null ===== * //
+@import "_variables";
 @import "_nullstyle";
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: $fontOpenSans;
 }
 
 // * ===== bem blocks ===== * //
@@ -21,5 +23,6 @@ body {
 @import "_task-2";
 @import "_task-3";
 @import "_task-4";
+@import "_task-5";
 
 // * ===== footer ===== * //

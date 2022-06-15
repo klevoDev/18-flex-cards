@@ -5,7 +5,7 @@
 
     &__task-1 {
         padding: 40px 0 140px;
-        background: #efefef;
+        background: $backgroundGrey;
     }
 
     &__task-2 {
@@ -14,7 +14,7 @@
 
     &__task-3 {
         padding: 60px 0 101px;
-        background: #efefef;
+        background: $backgroundGrey;
     }
 
     &__task-4 {
@@ -22,7 +22,7 @@
     }
 
     &__task-5 {
-        padding: 60px 120px;
-        background: #efefef;
+        padding: 60px 0;
+        background: $backgroundGrey;
     }
 }
