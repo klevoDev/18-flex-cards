@@ -2,7 +2,7 @@
     &__row {
         display: flex;
         flex-wrap: wrap;
-        margin: -23.5px -55px;
+        margin: -23.5px -70px;
     }
 
     &__column {
@@ -11,21 +11,37 @@
     }
 
     &__item {
-        max-width: 200px;
+        position: relative;
+        width: 200px;
         height: 80px;
-        transition: all 0.3s ease 0s;
 
+        transition: all 0.3s ease 0s;
+        font-size: 30px;
         background-color: #ffff99;
 
         &::before {
             position: absolute;
-            font-size: 30px;
             transform: translate(20%, 90%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+
+            width: 190px;
+            height: 70px;
+            border: 5px solid #000;
         }
 
         &:hover {
             background-color: #7c3030;
             color: #fff;
+
+            &::after {
+                border: 5px solid #fff;
+            }
         }
     }
 }
