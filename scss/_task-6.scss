@@ -1,0 +1,31 @@
+.task-6 {
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -23.5px -55px;
+    }
+
+    &__column {
+        padding: 23.5px 55px;
+        flex: 0 1 20%;
+    }
+
+    &__item {
+        max-width: 200px;
+        height: 80px;
+        transition: all 0.3s ease 0s;
+
+        background-color: #ffff99;
+
+        &::before {
+            position: absolute;
+            font-size: 30px;
+            transform: translate(20%, 90%);
+        }
+
+        &:hover {
+            background-color: #7c3030;
+            color: #fff;
+        }
+    }
+}

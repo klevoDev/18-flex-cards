@@ -30,6 +30,14 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: "iconfont";
+  src: url("./../fonts/iconfont-logo.woff2") format("woff2"), url("./../fonts/iconfont-logo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 [class^="_icon-"]::before,
 [class*=" _icon-"]::before,
 [class^="_icon-"]::after,
@@ -47,6 +55,10 @@
 
 ._icon-kubitos:before {
   content: "\e900";
+}
+
+._icon-logotype:before {
+  content: "\e901";
 }
 
 * {
@@ -167,6 +179,10 @@ body {
 .page__task-5 {
   padding: 60px 0;
   background: #efefef;
+}
+
+.page__task-6 {
+  padding: 60px 0;
 }
 
 .task-1__heading {
@@ -886,4 +902,40 @@ body {
   color: #000000;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.task-6__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -23.5px -55px;
+}
+
+.task-6__column {
+  padding: 23.5px 55px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+}
+
+.task-6__item {
+  max-width: 200px;
+  height: 80px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #ffff99;
+}
+
+.task-6__item::before {
+  position: absolute;
+  font-size: 30px;
+  -webkit-transform: translate(20%, 90%);
+          transform: translate(20%, 90%);
+}
+
+.task-6__item:hover {
+  background-color: #7c3030;
+  color: #fff;
 }
