@@ -1,7 +1,7 @@
 .page {
-    & > *:not(:nth-child(6)) {
-        display: none;
-    }
+    // & > *:not(:nth-child(6)) {
+    //     display: none;
+    // }
 
     &__task-1 {
         padding: 40px 0 140px;
@@ -28,5 +28,10 @@
 
     &__task-6 {
         padding: 60px 0;
+    }
+
+    &__task-7 {
+        padding: 60px 0;
+        background: $backgroundGrey;
     }
 }

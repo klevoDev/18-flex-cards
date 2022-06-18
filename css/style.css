@@ -146,8 +146,8 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.page > *:not(:nth-child(6)) {
-  display: none;
+.footer {
+  padding: 30px 0;
 }
 
 .page__task-1 {
@@ -175,6 +175,11 @@ body {
 
 .page__task-6 {
   padding: 60px 0;
+}
+
+.page__task-7 {
+  padding: 60px 0;
+  background: #efefef;
 }
 
 .task-1__heading {
@@ -940,4 +945,18 @@ body {
 
 .task-6__column:hover svg .text-svg {
   fill: #fff;
+}
+
+.task-7__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tooter__copy {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137.5%;
+  text-align: center;
+  color: #666666;
 }
