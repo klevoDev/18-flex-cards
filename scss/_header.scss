@@ -1,0 +1,48 @@
+.header {
+    padding: 15px 0 15px;
+
+    &_row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px 0 12px;
+    }
+
+    &__logo {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+
+        color: #000000;
+
+        span {
+            color: #0a36a7;
+        }
+    }
+
+    &__nav {
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 137.5%;
+    }
+
+    &__point {
+        margin-left: 20.5px;
+    }
+
+    &__ref {
+        color: #000000;
+
+        &:hover {
+            color: #0a36a7;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
